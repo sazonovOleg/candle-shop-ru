@@ -1,0 +1,20 @@
+.Wrapper {
+  width: 100%;
+}
+
+.Container {
+  margin: 0 auto;
+  max-width: 1300px;
+  width: 100%;
+  padding: {
+    top: 1rem;
+    bottom: 1rem;
+  };
+  border-top: 1px solid rgba(194, 194, 194, 0.65);
+}
+
+.Row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
