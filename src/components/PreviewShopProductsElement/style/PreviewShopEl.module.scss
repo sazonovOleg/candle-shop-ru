@@ -1,0 +1,52 @@
+.Wrap {
+  max-width: 380px;
+  width: 100%;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  margin:  0 1rem 2rem;
+  padding: 0 .5rem;
+  background-color: rgba(255, 235, 206, 0.46);
+  border-radius: .5rem;
+}
+
+.Image {
+  border: 1px solid #ffffff;
+  border-radius: .2rem;
+  margin-bottom: 1rem;
+}
+
+.Title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.Description {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.Price {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.Button {
+  padding: .8rem;
+  margin-bottom: 1rem;
+  background-color: #ffffff;
+  border: 1px solid  #303437;
+  border-radius: .5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #303437;
+  transition: all .3s ease-out;
+  cursor: pointer;
+  &:hover {
+    background-color: #303437;
+    color: #fff;
+  }
+}
