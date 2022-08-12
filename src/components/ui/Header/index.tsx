@@ -15,14 +15,16 @@ import {
     SocialIcon,
     SocialLink
 } from './style/Header.module.scss'
-import cart from '../../assets/icon/cart.png'
-import logo from '../../assets/icon/candle.png'
-import instagram from '../../assets/icon/instagram.png'
-import telegram from '../../assets/icon/telegram.png'
-import vk from '../../assets/icon/vk-social-logotype.png'
-import mail from '../../assets/icon/email.png'
+import cart from '../../../assets/icon/cart.png'
+import logo from '../../../assets/icon/candle.png'
+import instagram from '../../../assets/icon/instagram.png'
+import telegram from '../../../assets/icon/telegram.png'
+import vk from '../../../assets/icon/vk-social-logotype.png'
+import mail from '../../../assets/icon/email.png'
+import {HeaderProps} from "./interface";
 
-const Header = (): JSX.Element => {
+
+const Header = ({onCartClick}:HeaderProps): JSX.Element => {
     return (
         <div className={Wrapper}>
             <div className={BoxSpacer}>
@@ -70,7 +72,7 @@ const Header = (): JSX.Element => {
                         Сотрудничество
                     </a>
                 </nav>
-                <img src={cart} className={Cart}/>
+                <img src={cart} onClick={onCartClick} className={Cart}/>
             </div>
         </div>
     )

@@ -1,7 +1,7 @@
 import React from 'react'
 import {Wrapper, Container, Title, Subtitle, ColumnLeft, BannerImage, Button} from './style/BannerPage.module.scss'
-import bannerImage1 from '../../assets/image/image-1.jpeg'
-import bannerImage2 from '../../assets/image/image-2.jpeg'
+import bannerImage1 from '../../../assets/image/image-1.jpeg'
+import bannerImage2 from '../../../assets/image/image-2.jpeg'
 
 const BannerPage = ():JSX.Element => {
   return (
