@@ -1,5 +1,5 @@
 import {PreviewShopProductsType} from "./type";
-import bannerImage1 from "../../assets/image/image-1.jpeg";
+import bannerImage1 from "../../../assets/image/image-1.jpeg";
 
 export const ElementShopData:PreviewShopProductsType[] = [
     {

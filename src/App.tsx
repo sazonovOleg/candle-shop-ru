@@ -1,15 +1,21 @@
 import React from 'react';
 import {AppBody} from './App.module.scss';
-import {Header} from "./components/Header";
-import {BannerPage} from "./components/BannerPage";
-import {PreviewShopProducts} from "./components/PreviewShopProducts";
+import {Header} from "./components/ui/Header";
+import {Main} from "./components/ui/Main";
+import {Cart} from "./components/ui/Cart";
 
 function App() {
+    const [cartState, setShowCart] = React.useState<boolean>(false)
+
     return (
         <div className={AppBody}>
-            <Header/>
-            <BannerPage/>
-            <PreviewShopProducts/>
+            <Header onCartClick={() => setShowCart(true)}/>
+            {
+                !cartState && (<Main/>)
+            }
+            {
+                cartState && (<Cart onCartClose={() => setShowCart(false)}/>)
+            }
         </div>
     );
 }
